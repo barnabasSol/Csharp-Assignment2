@@ -7,7 +7,7 @@ namespace shop
         static void Main(string[] args)
         {
             bool buying = true;
-            int choice;
+            string choice;
             double sumTotal = 0;
             int amnt_item1 = 0;
             int amnt_item2 = 0;
@@ -21,14 +21,21 @@ namespace shop
                 Console.WriteLine("3, knife----5.00 birr");
                 Console.WriteLine("4, boiling flask----51.00 birr");
                 Console.WriteLine("5, exit");
-                choice = Convert.ToInt32(Console.ReadLine());
-                if (choice > 5 || choice < 1)
+                choice = Console.ReadLine();
+                bool isNumber = int.TryParse(choice, out _);
+                while (!isNumber)
+                {
+                    Console.Write("invalid input, try again: ");
+                    choice = Console.ReadLine();
+                    isNumber = int.TryParse(choice, out _);
+                }
+                if (int.Parse(choice) > 5 || int.Parse(choice) < 1)
                 {
                     Console.WriteLine("we dont have that item");
                     Console.ReadKey();
                     Console.Clear();
                 }
-                else if (choice == 1)
+                else if (int.Parse(choice) == 1)
                 {
                     ++amnt_item1;
                     sumTotal += 30;
@@ -37,7 +44,7 @@ namespace shop
                     Console.ReadKey();
                     Console.Clear();
                 }
-                else if (choice == 2)
+                else if (int.Parse(choice) == 2)
                 {
                     ++amnt_item2;
                     sumTotal += 22.5;
@@ -46,7 +53,7 @@ namespace shop
                     Console.ReadKey();
                     Console.Clear();
                 }
-                else if (choice == 3)
+                else if (int.Parse(choice) == 3)
                 {
                     ++amnt_item3;
                     sumTotal += 5;
@@ -55,7 +62,7 @@ namespace shop
                     Console.ReadKey();
                     Console.Clear();
                 }
-                else if (choice == 4)
+                else if (int.Parse(choice) == 4)
                 {
                     amnt_item4++;
                     sumTotal += 51;
@@ -64,7 +71,7 @@ namespace shop
                     Console.ReadKey();
                     Console.Clear();
                 }
-                else if (choice == 5)
+                else if (int.Parse(choice) == 5)
                 {
                     buying = false;
                 }
