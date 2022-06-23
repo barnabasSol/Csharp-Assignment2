@@ -82,7 +82,7 @@ namespace shop
             }
             else
             {
-                Console.WriteLine("ITEM _ _ _ _ _ _ _AMOUNT");
+                Console.WriteLine("ITEM- - - - - - - -AMOUNT");
                 Console.WriteLine();
                 if (amnt_item1 > 0)
                 {
