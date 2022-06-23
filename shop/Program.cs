@@ -38,7 +38,7 @@ namespace shop
                 else if (int.Parse(choice) == 1)
                 {
                     ++amnt_item1;
-                    sumTotal += 30;
+                    sumTotal += 30.00;
                     Console.WriteLine("added to cart!");
                     Console.WriteLine("press any key to continue shopping....");
                     Console.ReadKey();
@@ -47,7 +47,7 @@ namespace shop
                 else if (int.Parse(choice) == 2)
                 {
                     ++amnt_item2;
-                    sumTotal += 22.5;
+                    sumTotal += 22.50;
                     Console.WriteLine("added to cart!");
                     Console.WriteLine("press any key to continue shopping....");
                     Console.ReadKey();
@@ -56,7 +56,7 @@ namespace shop
                 else if (int.Parse(choice) == 3)
                 {
                     ++amnt_item3;
-                    sumTotal += 5;
+                    sumTotal += 5.00;
                     Console.WriteLine("added to cart!");
                     Console.WriteLine("press any key to continue shopping....");
                     Console.ReadKey();
@@ -65,7 +65,7 @@ namespace shop
                 else if (int.Parse(choice) == 4)
                 {
                     amnt_item4++;
-                    sumTotal += 51;
+                    sumTotal += 51.00;
                     Console.WriteLine("added to cart!");
                     Console.WriteLine("press any key to continue shopping....");
                     Console.ReadKey();
