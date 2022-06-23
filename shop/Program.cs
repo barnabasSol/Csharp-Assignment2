@@ -40,7 +40,7 @@ namespace shop
                     ++amnt_item1;
                     sumTotal += 30;
                     Console.WriteLine("added to cart!");
-                    Console.WriteLine("press any key to continue....");
+                    Console.WriteLine("press any key to continue shopping....");
                     Console.ReadKey();
                     Console.Clear();
                 }
@@ -49,7 +49,7 @@ namespace shop
                     ++amnt_item2;
                     sumTotal += 22.5;
                     Console.WriteLine("added to cart!");
-                    Console.WriteLine("press any key to continue....");
+                    Console.WriteLine("press any key to continue shopping....");
                     Console.ReadKey();
                     Console.Clear();
                 }
@@ -58,7 +58,7 @@ namespace shop
                     ++amnt_item3;
                     sumTotal += 5;
                     Console.WriteLine("added to cart!");
-                    Console.WriteLine("press any key to continue....");
+                    Console.WriteLine("press any key to continue shopping....");
                     Console.ReadKey();
                     Console.Clear();
                 }
@@ -67,7 +67,7 @@ namespace shop
                     amnt_item4++;
                     sumTotal += 51;
                     Console.WriteLine("added to cart!");
-                    Console.WriteLine("press any key to continue....");
+                    Console.WriteLine("press any key to continue shopping....");
                     Console.ReadKey();
                     Console.Clear();
                 }
