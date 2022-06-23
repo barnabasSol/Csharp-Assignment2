@@ -32,6 +32,7 @@ namespace shop
                 if (int.Parse(choice) > 5 || int.Parse(choice) < 1)
                 {
                     Console.WriteLine("we dont have that item");
+                    Console.WriteLine("press any key to continue shopping....");
                     Console.ReadKey();
                     Console.Clear();
                 }
